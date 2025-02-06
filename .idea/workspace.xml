@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d67af718-fb66-492e-bf7a-c5d3045910d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/les1/les1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/les2/huiswerk1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/les2/les2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/les3/les3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/les3/les3.php" beforeDir="false" afterPath="$PROJECT_DIR$/les3/les3.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +33,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/xampp/htdocs/st-sd-p03-php-oefen-302596555",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -44,6 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738840451016</updated>
       <workItem from="1738840453434" duration="1221000" />
+      <workItem from="1738845988207" duration="1526000" />
     </task>
     <servers />
   </component>
