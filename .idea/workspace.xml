@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d67af718-fb66-492e-bf7a-c5d3045910d4" name="Changes" comment="les5">
+    <list default="true" id="d67af718-fb66-492e-bf7a-c5d3045910d4" name="Changes" comment="les5 gemaakt">
+      <change afterPath="$PROJECT_DIR$/les5/db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/les5/db/.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/les5/img/giraf.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/les5/img/hert.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/les5/img/ijsbeer.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/les5/img/kameel.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/les5/img/olifant.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/les5/info.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/les4/bmw_cars.sql" beforeDir="false" afterPath="$PROJECT_DIR$/bmw_cars.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/les5/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/les5/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +105,7 @@
       <workItem from="1739444066893" duration="72000" />
       <workItem from="1739444300034" duration="43000" />
       <workItem from="1739444343751" duration="100000" />
-      <workItem from="1739444444927" duration="620000" />
+      <workItem from="1739444444927" duration="1902000" />
     </task>
     <task id="LOCAL-00001" summary="les5">
       <option name="closed" value="true" />
@@ -115,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739441441284</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="les5 gemaakt">
+      <option name="closed" value="true" />
+      <created>1739445581786</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739445581786</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +150,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="les5" />
-    <option name="LAST_COMMIT_MESSAGE" value="les5" />
+    <MESSAGE value="les5 gemaakt" />
+    <option name="LAST_COMMIT_MESSAGE" value="les5 gemaakt" />
   </component>
 </project>
