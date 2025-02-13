@@ -17,7 +17,7 @@ $animals = $query->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
 <?php foreach ($animals as $animal): ?>
-<a href=".php?id=<?=$animal['name']?>"><?=$animal['name']?></a>;
+<a href=".php?id=<?=$animal['name']?>"><?=$animal['name']?></a><br>;
 <?php endforeach; ?>
 </body>
 </html>
