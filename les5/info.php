@@ -1,23 +1,24 @@
 <?php
 require 'db.php';
 global $db;
-$query = $db->prepare('SELECT info , name FROM `dier` WHERE id = :id');
-$query-> bindParam(param)
+
+$id = $_GET['id'];
+
+$query = $db->prepare("SELECT * FROM `bmws` WHERE id = :id");
+$query->bindParam(':id', $id);
 $query->execute();
-$animal = $query->fetch(PDO::FETCH_ASSOC);
+
+
+$bmw = $query->fetch(PDO::FETCH_ASSOC);
+
+
+echo "Model: " . htmlspecialchars($bmw['model']) . "<br>";
+echo "Price: " . htmlspecialchars($bmw['price']) . "<br>";
+echo "Range: " . htmlspecialchars($bmw['range1']) . "<br>";
+
+
 ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-<h1><?= $animal['name']?></h1>;
-<p><?= $animal['info']?></p>;
-<img src="img/ <?= $animal['img']?>">
-</body>
-</html>
+
+<br>
+
+<a href="index.php">Back</a>
