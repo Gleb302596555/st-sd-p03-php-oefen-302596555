@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d67af718-fb66-492e-bf7a-c5d3045910d4" name="Changes" comment="les5 gemaakt">
-      <change afterPath="$PROJECT_DIR$/les6/opdracht7.6.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/les6/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/les6/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="d67af718-fb66-492e-bf7a-c5d3045910d4" name="Changes" comment="les5 gemaakt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +101,7 @@
       <workItem from="1739873608457" duration="7000" />
       <workItem from="1739873733526" duration="11000" />
       <workItem from="1741264387448" duration="773000" />
-      <workItem from="1741683315526" duration="1549000" />
+      <workItem from="1741683315526" duration="1955000" />
     </task>
     <task id="LOCAL-00001" summary="les5">
       <option name="closed" value="true" />
