@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d67af718-fb66-492e-bf7a-c5d3045910d4" name="Changes" comment="les5 gemaakt">
-      <change afterPath="$PROJECT_DIR$/les7/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/les6/opdracht7.6.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/les6/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/les6/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/xampp/htdocs/st-sd-p03-php-oefen-302596555",
+    "last_opened_file_path": "C:/Users/apple/OneDrive/Документы/GitHub/st-sd-p03-php-oefen-302596555",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,8 +79,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-PS-243.23654.168" />
-        <option value="bundled-php-predefined-a98d8de5180a-4c3855d0ab16-com.jetbrains.php.sharedIndexes-PS-243.23654.168" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PS-243.24978.50" />
+        <option value="bundled-php-predefined-a98d8de5180a-fbeb0b58ac0f-com.jetbrains.php.sharedIndexes-PS-243.24978.50" />
       </set>
     </attachedChunks>
   </component>
@@ -104,6 +105,7 @@
       <workItem from="1739873608457" duration="7000" />
       <workItem from="1739873733526" duration="11000" />
       <workItem from="1741264387448" duration="773000" />
+      <workItem from="1741683315526" duration="1549000" />
     </task>
     <task id="LOCAL-00001" summary="les5">
       <option name="closed" value="true" />
