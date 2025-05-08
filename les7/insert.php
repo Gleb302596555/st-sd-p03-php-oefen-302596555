@@ -13,7 +13,7 @@ if(empty($name)){
 }
     $img = filter_input(INPUT_POST, 'img' ,FILTER_SANITIZE_SPECIAL_CHARS);
     if(empty($img)){
-        $errors['img'] = NAME_ERROR;
+        $errors['img'] = IMG_ERROR;
     }else{
         $inputs['img'] = $img;
     }

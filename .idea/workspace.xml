@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d67af718-fb66-492e-bf7a-c5d3045910d4" name="Changes" comment="les5 gemaakt">
-      <change afterPath="$PROJECT_DIR$/les8-Session/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/les8-Session/pagina.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/les9-Session2/db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/les9-Session2/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/les7/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/les7/insert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super-les/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/super-les/db.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +116,7 @@
       <workItem from="1743082183700" duration="2265000" />
       <workItem from="1746532153110" duration="14000" />
       <workItem from="1746532167869" duration="1501000" />
+      <workItem from="1746695538921" duration="5297000" />
     </task>
     <task id="LOCAL-00001" summary="les5">
       <option name="closed" value="true" />
