@@ -1,9 +1,7 @@
 <?php
-$name = $_POST['naam'];
-$title = $_POST['title'];
+$name = filter_input(INPUT_POST, 'naam', FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+$title = filter_input(INPUT_POST, 'title', FILTER_SANITIZE_STRING);
 number_format($name, 2, ',', '.');
-
-
 ?>
 <!doctype html>
 <html lang="en">

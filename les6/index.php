@@ -27,6 +27,8 @@
     <label for="terms">Accepteer de voorwaarden</label>
     <input type="checkbox" name="terms" value="accepteerd"id="terms"><br>
     <button name="submit">Verzender</button>
-    <input type="submit" value="Verzender"></form><br>
+    <input type="submit" value="Verzender">
+</form>
+<br>
 </body>
 </html>

@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d67af718-fb66-492e-bf7a-c5d3045910d4" name="Changes" comment="les5 gemaakt">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/les9-Session2/db.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/les9-Session2/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/les7/insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/les7/insert.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/super-les/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/super-les/db.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/les6/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/les6/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/les6/opdracht7.6.php" beforeDir="false" afterPath="$PROJECT_DIR$/les6/opdracht7.6.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/les7/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/les7/index.php" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +69,11 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+<<<<<<< Updated upstream
     &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/st-sd-p03-php-oefen-302596555&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/apple/OneDrive/Документы/GitHub/sd24-project-p03-review-your-experience-webcrafters&quot;,
+>>>>>>> Stashed changes
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -109,6 +120,7 @@
       <workItem from="1741264387448" duration="773000" />
       <workItem from="1741683315526" duration="1955000" />
       <workItem from="1741809472140" duration="258000" />
+<<<<<<< Updated upstream
       <workItem from="1742888093161" duration="65000" />
       <workItem from="1742888160179" duration="4841000" />
       <workItem from="1743078840928" duration="7000" />
@@ -117,6 +129,9 @@
       <workItem from="1746532153110" duration="14000" />
       <workItem from="1746532167869" duration="1501000" />
       <workItem from="1746695538921" duration="5297000" />
+=======
+      <workItem from="1742283589762" duration="5232000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="les5">
       <option name="closed" value="true" />
