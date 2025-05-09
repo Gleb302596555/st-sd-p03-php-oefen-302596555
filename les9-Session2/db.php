@@ -1,6 +1,7 @@
 <?php
 try {
-    $db = new PDO('mysql:localhost;dbname:registr_form' ,  "root" , "");
-} catch (PDOException $e){
+    $db = new PDO('mysql:host=localhost;dbname=registr_form;charset=utf8mb4', "root", "",
+    );
+} catch (PDOException $e) {
     die('Error : ' . $e->getMessage());
 }

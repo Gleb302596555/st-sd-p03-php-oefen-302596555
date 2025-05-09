@@ -4,13 +4,11 @@ require "db.php";
 const NAME_ERROR = 'Vul een naam in';
 const PASSWORD_ERROR = 'Vul jouw wachtwoord in';
 const EMAIL_ERROR = 'Vul jouw email in';
-const INVALID_EMAIL_ERROR = 'Ongeldig email adres';
 
 if (isset($_POST['submit'])) {
     $errors = [];
     $inputs = [];
 
-    // Sanitize and validate name
     $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
     if (empty($name)) {
         $errors['name'] = NAME_ERROR;
@@ -18,35 +16,39 @@ if (isset($_POST['submit'])) {
         $inputs['name'] = $name;
     }
 
-    // Validate password
+
     $password = $_POST['password'];
     if (empty($password)) {
         $errors['password'] = PASSWORD_ERROR;
     } else {
-        $hashtPassword = password_hash($password, PASSWORD_DEFAULT);
-        $inputs['password'] = $hashtPassword;
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        $inputs['password'] = $hashedPassword;
     }
-
 
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
     if (empty($email)) {
         $errors['email'] = EMAIL_ERROR;
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors['email'] = INVALID_EMAIL_ERROR;
+        $errors['email'] = 'Please enter a valid email address';
     } else {
         $inputs['email'] = $email;
     }
 
 
-    if (count($errors) === 0) {
-        $query = $db->prepare('INSERT INTO form (username , password , email , time_created) VALUES (:name , :password , :email , NOW())');
-        $query->bindParam('name', $inputs['name']);
-        $query->bindParam('password', $inputs['password']);
-        $query->bindParam('email', $inputs['email']);
-        $query->execute();
+    try {
+        if (count($errors) === 0) {
+            $query = $db->prepare('INSERT INTO form (username, password, email, time_created) VALUES (:name, :password, :email, NOW())');
+            $query->bindParam(':name', $inputs['name']);
+            $query->bindParam(':password', $inputs['password']);
+            $query->bindParam(':email', $inputs['email']);
+            $query->execute();
 
-        header('Location: index.php');
-        exit;
+            header('Location: index.php');
+            exit;
+        }
+    } catch (PDOException $e) {
+
+        $errors['database'] = 'Registration failed. Please try again later.';
     }
 }
 ?>
