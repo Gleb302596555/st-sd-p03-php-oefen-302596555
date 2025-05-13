@@ -28,8 +28,6 @@ if (isset($_POST['submit'])) {
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
     if (empty($email)) {
         $errors['email'] = EMAIL_ERROR;
-    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors['email'] = 'Please enter a valid email address';
     } else {
         $inputs['email'] = $email;
     }
