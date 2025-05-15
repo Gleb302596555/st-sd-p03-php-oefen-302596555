@@ -23,7 +23,7 @@ if (count($errors) === 0){
     $query->bindParam('name' , $inputs['name']);
     $query->bindParam('img' , $inputs['img']);
     $query-> execute();
-    header('Location: index.php');
+    header('Location: sing_in.php');
 }
 }
 ?>

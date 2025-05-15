@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
         $query->bindParam('name', $inputs['name']);
         $query->execute();
 
-        header('Location: index.php');
+        header('Location: sing_in.php');
     }
 
 }
