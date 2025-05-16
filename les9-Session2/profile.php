@@ -1,13 +1,24 @@
 <?php
 session_start();
+require "db.php";
+global $db;
 
 
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     header('Location: log_in.php');
     exit;
 }
-?>
 
+
+$username = $_SESSION['username'];
+$userId = $_SESSION['user_id'];
+$query = $db->prepare('SELECT * FROM `form` WHERE `id` = :id');
+$query->bindParam(':id', $userId, PDO::PARAM_INT);
+
+$query->execute();
+
+$forms = $query->fetchAll(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -15,16 +26,22 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     <title>Profielpagina</title>
 </head>
 <body>
-<h1>Welkom, <?= htmlspecialchars($_SESSION['username']) ?>!</h1>
+<h1>Welkom, <?= ($_SESSION['username']) ?>!</h1>
 
 <p>Je bent succesvol ingelogd.</p>
 
-<p>
-    Jouw email:<?= htmlspecialchars($_SESSION['email']) ?>
-</p>
+<?php
+if ($forms) {
+    foreach ($forms as $form){
+        echo '<p>Jouw email is: ' . ($form['email']) . '</p>';
+    }
+} else {
+    echo '<p>Geen formuliergegevens gevonden.</p>';
+}
+?>
 
-<form action="logout.php" method="post">
-    <button type="submit" name="logout">Uitloggen</button>
+<form action="data_changer.php" method="post">
+    <button type="submit" name="data_changer">Wijzig gegevens</button>
 </form>
 </body>
 </html>

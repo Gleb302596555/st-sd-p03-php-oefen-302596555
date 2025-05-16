@@ -61,40 +61,64 @@ if (isset($_POST['submit'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registratieformulier</title>
+    <!-- ✅ Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-<?php if (isset($_SESSION['success'])): ?>
-    <script>
-        alert("<?php echo $_SESSION['success']; ?>");
-    </script>
-    <?php unset($_SESSION['success']); ?>
-<?php endif; ?>
-<form action="" method="post">
-    <label for="name">Username:</label>
-    <?php if (isset($errors['name'])): ?>
-        <?php echo $errors['name']; ?>
-    <?php endif; ?>
-    <input type="text" id="name" name="name" value="<?php echo isset($inputs['name']) ?? ''; ?>"><br>
+<body class="bg-light py-5">
 
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <!-- ✅ Bootstrap Alert -->
+            <?php if (isset($_SESSION['success'])): ?>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <?php echo $_SESSION['success']; ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <?php unset ($_SESSION['success']); ?>
+            <?php endif; ?>
 
-    <label for="password">Password:</label>
-    <?php if (isset($errors['password'])): ?>
-        <?php echo $errors['password']; ?>
-    <?php endif; ?>
-    <input type="password" id="password" name="password"><br>
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Registreren</h4>
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Gebruikersnaam</label>
+                            <input type="text" id="name" name="name" class="form-control"
+                                   value="<?php echo isset($inputs['name']) ? htmlspecialchars($inputs['name']) : ''; ?>">
+                            <?php if (isset($errors['name'])): ?>
+                                <div class="text-danger"><?php echo $errors['name']; ?></div>
+                            <?php endif; ?>
+                        </div>
 
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Wachtwoord</label>
+                            <input type="password" id="password" name="password" class="form-control">
+                            <?php if (isset($errors['password'])): ?>
+                                <div class="text-danger"><?php echo $errors['password']; ?></div>
+                            <?php endif; ?>
+                        </div>
 
-    <label for="email">Email:</label>
-    <?php if (isset($errors['email'])): ?>
-        <?php echo $errors['email']; ?>
-    <?php endif; ?>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Emailadres</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                   value="<?php echo isset($inputs['email']) ? htmlspecialchars($inputs['email']) : ''; ?>">
+                            <?php if (isset($errors['email'])): ?>
+                                <div class="text-danger"><?php echo $errors['email']; ?></div>
+                            <?php endif; ?>
+                        </div>
 
-    <input type="email" id="email" name="email" value="<?php echo isset($inputs['email']) ?? ''; ?>"><br>
-    <button type="submit" id="submit" name="submit">Submit</button>
-</form>
+                        <button type="submit" id="submit" name="submit" class="btn btn-primary w-100">Registreren</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ✅ Bootstrap JS (for alert dismissal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
