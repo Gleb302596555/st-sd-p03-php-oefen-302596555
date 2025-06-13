@@ -30,8 +30,17 @@ $categories = $query->fetchAll(PDO::FETCH_ASSOC);
 
 <div class="alert alert-success">
     <?= $_SESSION['message'] ?>
+    <?php unset($_SESSION['message']);  ?>
 </div>
-
+<?php endif; ?>
+<?php if (isset($_SESSION['error'])):?>
+    <div class="alert alert-warning">
+        <?= $_SESSION['error'] ?>
+        <?php unset($_SESSION['error']);  ?>
+    </div>
+<?php endif; ?>
+<?php if (isset($user) && $user['role'] === 'ROLE_ADMIN'): ?>
+    <td><a href="insert.php">Category toevoegen</a></td>
 <?php endif; ?>
 <table>
     <thead>
@@ -48,7 +57,6 @@ $categories = $query->fetchAll(PDO::FETCH_ASSOC);
             <?php if (isset($user) && $user['role'] === 'ROLE_ADMIN'): ?>
                 <td><a href="update.php?id=<?= $category['id'] ?>">update</a></td>
                 <td><a href="delete.php?id=<?= $category['id'] ?>">delete</a></td>
-                <td><a href="insert.php">Category toevoegen</a></td>
             <?php endif; ?>
         </tr>
     <?php endforeach; ?>

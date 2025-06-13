@@ -27,7 +27,10 @@ if (isset($_SESSION['login'])) {
     <tbody>
     <tr>
         <th>Naam</th>
-        <td><?= $user['name'] ?></td>
+
+        <td><?= $user['name'] ?></td> <br>
+        <th>ROLE</th>
+        <td><?= $user['role'] ?></td>
     </tr>
     </tbody>
 </table>
