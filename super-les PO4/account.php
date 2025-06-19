@@ -23,6 +23,7 @@ if (isset($_SESSION['login'])) {
     <title>Document</title>
 </head>
 <body>
+<?=require "nav.php"?>
 <table>
     <tbody>
     <tr>

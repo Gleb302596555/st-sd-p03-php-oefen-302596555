@@ -26,19 +26,24 @@ $categories = $query->fetchAll(PDO::FETCH_ASSOC);
     <title>Document</title>
 </head>
 <body>
+<?=require "nav.php"?>
 <?php if (isset($_SESSION['message'])):?>
 
 <div class="alert alert-success">
     <?= $_SESSION['message'] ?>
     <?php unset($_SESSION['message']);  ?>
 </div>
-<?php endif; ?>
+<?php
+unset($_SESSION['message']);
+endif; ?>
 <?php if (isset($_SESSION['error'])):?>
     <div class="alert alert-warning">
         <?= $_SESSION['error'] ?>
         <?php unset($_SESSION['error']);  ?>
     </div>
-<?php endif; ?>
+<?php
+    unset($_SESSION['message']);
+endif; ?>
 <?php if (isset($user) && $user['role'] === 'ROLE_ADMIN'): ?>
     <td><a href="insert.php">Category toevoegen</a></td>
 <?php endif; ?>

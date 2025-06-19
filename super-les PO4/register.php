@@ -44,10 +44,12 @@ if (isset($_POST['submit'])) {
         $users = $emailQuery->fetchAll(PDO::FETCH_ASSOC);
 
         if (count($users) === 0) {
-            $query = $db->prepare('INSERT INTO users (name, email, password) VALUES (:name, :email, :password)');
+            $role = "ROLE_USER";
+            $query = $db->prepare('INSERT INTO users (name, email, password, role) VALUES (:name, :email, :password, :role)');
             $query->bindParam('name', $inputs['name']);
             $query->bindParam('email', $inputs['email']);
             $query->bindParam('password', $password);
+            $query->bindParam('role', $role);
             $query->execute();
             header('Location: login.php');
         } else {
@@ -66,6 +68,7 @@ if (isset($_POST['submit'])) {
     <title>Document</title>
 </head>
 <body>
+<?=require "nav.php"?>
 <nav>
     <?php if (!isset($_SESSION['login'])): ?>
         <a href="login.php">Login</a>

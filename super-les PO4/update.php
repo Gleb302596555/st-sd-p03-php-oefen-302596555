@@ -17,7 +17,6 @@ $id = $_GET['id'];
 $selectQuery = $db->prepare('SELECT * FROM category WHERE id = :id');
 $selectQuery->bindParam('id', $id);
 $selectQuery->execute();
-
 $category = $selectQuery->fetch(PDO::FETCH_ASSOC);
 
 const NAME_ERROR = "Vul een naam in";
@@ -57,6 +56,7 @@ if (isset($_POST['submit'])){
     <title>Document</title>
 </head>
 <body>
+<?=require "nav.php"?>
 <form method="post">
     <label for="name">Naam: </label>
 

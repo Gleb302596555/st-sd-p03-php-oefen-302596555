@@ -35,6 +35,7 @@ if (isset($_POST['submit'])){
     <title>Document</title>
 </head>
 <body>
+<?=require "nav.php"?>
 <form method="post">
     <label for="name">Naam: </label>
     <input type="text" id="name" name="name" value="<?= $inputs['name'] ?? '' ?>"><br>

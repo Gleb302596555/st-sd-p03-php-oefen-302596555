@@ -26,6 +26,7 @@
     <title>Document</title>
 </head>
 <body>
+<?=require "nav.php"?>
 <table>
     <thead>
     <tr>

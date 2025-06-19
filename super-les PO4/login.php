@@ -49,6 +49,7 @@ if (isset($_POST['submit'])) {
     <title>Document</title>
 </head>
 <body>
+<?=require "nav.php"?>
 <form method="post">
     <label for="email">Email:</label>
     <input type="text" id="email" name="email" value="<?= $inputs['email'] ?? '' ?>">
